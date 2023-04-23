@@ -1,0 +1,6 @@
+Copyright (c) 2022 Graffity Technologies Co., Ltd. All Rights Reserved.
+
+This package contains third-party software components governed by the license(s) indicated below:
+
+Component Name: grpc-swift
+License Type: "Apache License 2.0" [License](https://github.com/grpc/grpc-swift/blob/master/LICENSE)
