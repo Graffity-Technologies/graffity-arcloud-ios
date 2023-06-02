@@ -20,15 +20,16 @@ let package = Package(
         .target(
             name: "GraffityARCloudWrapper",
             dependencies: [
-                .target(name: "GraffityARCloud")
+                .target(name: "GraffityARCloud"),
+                .product(name: "GRPC", package: "grpc-swift"),
             ],
             path: "Sources",
             publicHeadersPath: ""
         ),
         .binaryTarget(
             name: "GraffityARCloud",
-            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-0.8.3.xcframework.zip",
-            checksum: "6f97ecd38e1c577a544db7bd2ca55be784e39ac3cd542b0ab89002c466011195"
+            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-0.8.4.xcframework.zip",
+            checksum: "12ba8e3889215956c459b735526c73f7d9208269c5f803763bdd135183cc8faf"
         )
     ]
 )
