@@ -13,8 +13,8 @@ let package = Package(
             targets: ["GraffityARCloud"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/grpc/grpc-swift.git", from: "1.7.3"),
-        .package(url: "https://github.com/airbnb/lottie-ios.git", from: "3.3.0"),
+        .package(url: "https://github.com/grpc/grpc-swift.git", from: "1.16.0"),
+        .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.2.0"),
     ],
     targets: [
         .target(
@@ -27,8 +27,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "GraffityARCloud",
-            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-0.8.2.xcframework.zip",
-            checksum: "c7d557f1b306dac56cfa120423bf21dc4f63cf217dd53bf9717ad12a786a6bfe"
+            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-0.8.3.xcframework.zip",
+            checksum: "6f97ecd38e1c577a544db7bd2ca55be784e39ac3cd542b0ab89002c466011195"
         )
     ]
 )
