@@ -1,4 +1,4 @@
-// swift-tools-version: 5.4
+// swift-tools-version: 5.6
 
 import PackageDescription
 
@@ -21,15 +21,14 @@ let package = Package(
             name: "GraffityARCloudWrapper",
             dependencies: [
                 .target(name: "GraffityARCloud"),
-                .product(name: "GRPC", package: "grpc-swift"),
             ],
             path: "Sources",
             publicHeadersPath: ""
         ),
         .binaryTarget(
             name: "GraffityARCloud",
-            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-0.8.4.xcframework.zip",
-            checksum: "12ba8e3889215956c459b735526c73f7d9208269c5f803763bdd135183cc8faf"
+            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-0.8.5.xcframework.zip",
+            checksum: "3db0a63c63e9ab8f9f35054c19528f3b1cca09cda907078dc2000845da728538"
         )
     ]
 )
