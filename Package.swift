@@ -17,10 +17,18 @@ let package = Package(
         .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.2.0"),
     ],
     targets: [
+        .target(
+            name: "GraffityARCloudWrapper",
+            dependencies: [
+                .target(name: "GraffityARCloud")
+            ],
+            path: "Sources",
+            publicHeadersPath: ""
+        ),
         .binaryTarget(
             name: "GraffityARCloud",
-            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-1.0.2.xcframework.zip",
-            checksum: "d86f5fb05ae002d12a2d77757df9ef8d424044bebf1a9f4c5fb2e2e3a02ec2d1"
+            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-1.0.3.xcframework.zip",
+            checksum: "09ccd4674ceba18c8b85e631c134bbba2643a2aae6c639ad69248083a4a91578"
         )
     ]
 )
