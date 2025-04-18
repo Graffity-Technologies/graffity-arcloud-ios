@@ -16,8 +16,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GraffityARCloud",
-            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-3.5.4.xcframework.zip",
-            checksum: "dbba8e274b5d5243c720a9297640ef6a3c36c270e8979215bd816f881bc6aad9"
+            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-3.5.5.xcframework.zip",
+            checksum: "0d668fa0e4ffab7b8b9a1455db767933936e30e8a1caead0f64c90f3768f98e7"
         )
     ]
 )
