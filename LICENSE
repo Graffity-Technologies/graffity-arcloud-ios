@@ -1,0 +1,113 @@
+Copyright (c) 2026 Graffity Technologies Co., Ltd. All Rights Reserved.
+
+The GraffityARCloud SDK ("the Software") is proprietary and is licensed, not
+sold. Use of the Software is subject to your agreement with Graffity
+Technologies Co., Ltd.
+
+================================================================================
+THIRD-PARTY SOFTWARE NOTICES
+================================================================================
+
+This package links the following third-party software components. Each is
+governed by the license indicated. Versions reflect the dependency graph
+resolved for this release; consult the linked repositories for authoritative
+license text.
+
+ALL components listed below are licensed under the Apache License, Version 2.0.
+A copy of that license is reproduced in full at the end of this file.
+
+--- Direct dependencies -------------------------------------------------------
+
+Component: grpc-swift-2 (2.4.1)
+  License: Apache License 2.0
+  Source:  https://github.com/grpc/grpc-swift-2
+
+Component: grpc-swift-nio-transport (2.7.0)
+  License: Apache License 2.0
+  Source:  https://github.com/grpc/grpc-swift-nio-transport
+
+Component: grpc-swift-protobuf (2.4.0)
+  License: Apache License 2.0
+  Source:  https://github.com/grpc/grpc-swift-protobuf
+
+Component: lottie-ios (4.6.0)
+  License: Apache License 2.0
+  Source:  https://github.com/airbnb/lottie-ios
+
+--- Transitive dependencies ---------------------------------------------------
+
+Component: swift-algorithms (1.2.1)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-algorithms
+
+Component: swift-asn1 (1.7.0)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-asn1
+
+Component: swift-async-algorithms (1.1.4)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-async-algorithms
+
+Component: swift-atomics (1.3.0)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-atomics
+
+Component: swift-certificates (1.19.1)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-certificates
+
+Component: swift-collections (1.5.1)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-collections
+
+Component: swift-crypto (4.5.0)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-crypto
+
+Component: swift-http-structured-headers (1.7.0)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-http-structured-headers
+
+Component: swift-http-types (1.5.1)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-http-types
+
+Component: swift-log (1.13.0)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-log
+
+Component: swift-nio (2.100.0)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-nio
+
+Component: swift-nio-extras (1.34.1)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-nio-extras
+
+Component: swift-nio-http2 (1.44.0)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-nio-http2
+
+Component: swift-nio-ssl (2.37.0)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-nio-ssl
+
+Component: swift-nio-transport-services (1.28.0)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-nio-transport-services
+
+Component: swift-numerics (1.1.1)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-numerics
+
+Component: swift-protobuf (1.38.0)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-protobuf
+
+Component: swift-service-lifecycle (2.11.0)
+  License: Apache License 2.0
+  Source:  https://github.com/swift-server/swift-service-lifecycle
+
+Component: swift-system (1.6.4)
+  License: Apache License 2.0
+  Source:  https://github.com/apple/swift-system
