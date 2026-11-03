@@ -2,12 +2,10 @@
 
 import PackageDescription
 
-// The v5 framework links these packages internally (all imported with Swift 6
-// `internal import`, so their types never appear in GraffityARCloud's public API).
-// A `.binaryTarget` cannot declare dependencies, so the thin `GraffityARCloud`
-// wrapper target below carries them and re-exports the binary module. Version
-// ranges are pinned to what the private project archived against — keep them in
-// sync with GraffityARCloudService.xcodeproj.
+// The framework statically embeds its dependencies (gRPC, NIO, Protobuf, Lottie), all
+// behind Swift 6 `internal import`, so consumers need none of them. Do not re-declare
+// them here: SPM would link a second, unused copy into every host app. The thin
+// `GraffityARCloud` target only re-exports the binary module.
 let package = Package(
     name: "GraffityARCloud",
     platforms: [
@@ -18,27 +16,15 @@ let package = Package(
             name: "GraffityARCloud",
             targets: ["GraffityARCloud"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/grpc/grpc-swift-2.git", .upToNextMajor(from: "2.4.1")),
-        .package(url: "https://github.com/grpc/grpc-swift-nio-transport.git", .upToNextMajor(from: "2.7.0")),
-        .package(url: "https://github.com/grpc/grpc-swift-protobuf", .upToNextMajor(from: "2.4.0")),
-        .package(url: "https://github.com/airbnb/lottie-ios.git", .upToNextMajor(from: "4.6.0")),
-    ],
     targets: [
         .binaryTarget(
             name: "GraffityARCloudBinary",
-            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-5.5.0.xcframework.zip",
-            checksum: "fb24e0b4be3fdd48bf0593a3d1be7483ba26fe16a1500ab1338a7ca505610457"
+            url: "https://graffity-sdk-public.s3.ap-southeast-1.amazonaws.com/iOS/GraffityARCloud-5.6.0.xcframework.zip",
+            checksum: "0a8a572b231014ca1c58dff6f0d292c7d2bb28d5cf0892232fc20d5ff719abf4"
         ),
         .target(
             name: "GraffityARCloud",
-            dependencies: [
-                "GraffityARCloudBinary",
-                .product(name: "GRPCCore", package: "grpc-swift-2"),
-                .product(name: "GRPCNIOTransportHTTP2", package: "grpc-swift-nio-transport"),
-                .product(name: "GRPCProtobuf", package: "grpc-swift-protobuf"),
-                .product(name: "Lottie", package: "lottie-ios"),
-            ]
+            dependencies: ["GraffityARCloudBinary"]
         ),
     ]
 )
